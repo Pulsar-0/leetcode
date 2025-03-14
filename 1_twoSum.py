@@ -22,7 +22,7 @@ testCaseNums = [
 testCaseTargets = [
 	9, 6, 6,
 ]
-testCaseExpected = [
+expected = [
 	[0, 1],
 	[1, 2],
 	[0, 1],
@@ -30,10 +30,11 @@ testCaseExpected = [
 
 if __name__ == '__main__':
 	solution = Solution()
+
 	for i in range(0, len(testCaseNums)):
 		case = i + 1
 
-		if solution.twoSum(testCaseNums[i], testCaseTargets[i]) == testCaseExpected[i]:
+		if solution.twoSum(testCaseNums[i], testCaseTargets[i]) == expected[i]:
 			print(f"case {case}: success")
 		else:
 			print(f"case {case}: failure")
